@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .hcn{
+            width:30px;
+            height: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        let i,j;
+        let total="<table border='1' width='300' cellspacing='0' cellpadding='3'>";
+        for (i=2;i<=9;i++){
+            total+="<tr>";
+            for (j=1;j<=9;j++){
+                total+="<td>"+ i +"x"+ j + "=" + i*j + "</td>";
+            }
+        }
+        total+="</table>";
+        document.write(total);
+    </script>
+</body>
+</html>
